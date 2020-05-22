@@ -1,0 +1,14 @@
+select * from Linee 
+INNER JOIN ac_tipologia ON Linee.ID_Tipologia = ac_tipologia.ID_Tipologia 
+LEFT JOIN Intestatari ON Linee.ID_Intestatario = Intestatari.ID_Intestatario 
+INNER JOIN ac_stato_attuale ON Linee.ID_Stato_attuale = ac_stato_attuale.ID_Stato_attuale 
+LEFT JOIN Fonia ON Linee.ID_Linea = Fonia.ID_Linea 
+LEFT JOIN Punti_rete ON Linee.ID_Linea = Punti_rete.ID_Linea 
+LEFT JOIN Vettori ON Fonia.ID_Vettore = Vettori.ID_Vettore  
+LEFT JOIN Dipendenze_linee ON Linee.ID_Linea = Dipendenze_linee.ID_Linea 
+INNER JOIN Dipendenze ON ((Dipendenze_linee.COD_PRI = Dipendenze.COD_PRI) 
+AND (Dipendenze_linee.COD_SEC = Dipendenze.COD_SEC) 
+AND (Dipendenze_linee.COD_TER = Dipendenze.COD_TER) 
+AND (Dipendenze_linee.COD_TIPO = Dipendenze.COD_TIPO)) 
+WHERE (Dipendenze.COD_PRI='01111')AND(Linee.Cancellata<>1) 
+ORDER BY IP,Numero_linea

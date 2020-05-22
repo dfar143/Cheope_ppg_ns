@@ -1,0 +1,348 @@
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Grammar rule name:a
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:b
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:b
+Current token type:Lexical_element
+Current token char:b
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:End of buffer.
+Ending getNextToken  NOT OK.
+Lex error on getting next token.
+EXEC SUCCEDED...OK!
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:Lexical error.
+Ending getNextToken  NOT OK.
+Grammar rule name:b
+Entering match.
+Getting current token.
+Lexical error.
+Match FAILED.
+Entering match.
+Getting current token.
+Lexical error.
+Match FAILED.
+EXEC FAILED !
+Lexical error.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Grammar rule name:a
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Grammar rule name:a
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Current token lexema:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:b
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:b
+Current token type:Lexical_element
+Current token char:b
+Current token lexema:b
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Current token lexema:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:End of buffer.
+Ending getNextToken  NOT OK.
+Lex error on getting next token.
+EXEC SUCCEDED...OK!
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:Lexical error.
+Ending getNextToken  NOT OK.
+Grammar rule name:
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Grammar rule name:a
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Current token lexema:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:b
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:b
+Current token type:Lexical_element
+Current token char:b
+Current token lexema:b
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Current token lexema:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:End of buffer.
+Ending getNextToken  NOT OK.
+Lex error on getting next token.
+EXEC SUCCEDED...OK!
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:Lexical error.
+Ending getNextToken  NOT OK.
+Grammar rule name:
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Grammar rule name:a
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Current token lexema:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:b
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:b
+Current token type:Lexical_element
+Current token char:b
+Current token lexema:b
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Current token lexema:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:End of buffer.
+Ending getNextToken  NOT OK.
+Lex error on getting next token.
+EXEC SUCCEDED...OK!
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:Lexical error.
+Ending getNextToken  NOT OK.
+Grammar rule name:
+Entering match.
+Getting current token.
+Lexical error.
+Match FAILED.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Grammar rule name:a
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Current token lexema:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:b
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:b
+Current token type:Lexical_element
+Current token char:b
+Current token lexema:b
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:a
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:a
+Current token type:Lexical_element
+Current token char:a
+Current token lexema:a
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:End of buffer.
+Ending getNextToken  NOT OK.
+Lex error on getting next token.
+EXEC SUCCEDED...OK!
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:Lexical error.
+Ending getNextToken  NOT OK.
+Grammar rule name:
+Entering match.
+Getting current token.
+Lexical error.
+Match FAILED.
+Entering match.
+Getting current token.
+Lexical error.
+Match FAILED.
+EXEC FAILED !
+Lexical error.

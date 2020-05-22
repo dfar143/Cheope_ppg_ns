@@ -1,0 +1,1 @@
+SELECT * FROM Emissioni WHERE ((Filiali='')AND(Posizione='')AND(Num_carta='')AND(Nominativo='RUGA PIERA'))
