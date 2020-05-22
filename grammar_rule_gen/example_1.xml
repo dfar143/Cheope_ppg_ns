@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<grammar_rules>
+ <grammar_rule name="a">
+  <tokens_def>
+   <token type="LEXICAL_ELEMENT" val="a">
+    /^a/
+   </token>
+   <token type="LEXICAL_ELEMENT" val="b">
+    /^b/
+   </token>
+  </tokens_def>
+  <tokens_attributes>
+   <Attr>Attr1</Attr>
+   <Attr>Attr2</Attr>
+  </tokens_attributes>
+  <productions>
+   <production name="">
+   	START1 =  A b A | A b  
+   </production>
+   <production name="">
+    A = a 
+   </production>
+   <production name="">
+    B = b 
+   </production>
+  </productions>
+ </grammar_rule>
+  <grammar_rule name="b">
+  <tokens_def>
+   <token type="LEXICAL_ELEMENT" val="b">
+    /^b/
+   </token>
+   <token type="LEXICAL_ELEMENT" val="c">
+    /^c/
+   </token>
+  </tokens_def>
+  <tokens_attributes>
+  </tokens_attributes>
+  <productions>
+   <production name="">
+    START1 = B | c
+   </production>
+   <production name="">
+    B = b
+   </production>
+  </productions>
+ </grammar_rule>
+</grammar_rules>

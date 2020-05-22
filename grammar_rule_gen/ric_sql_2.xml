@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<grammar_rules>
+ <grammar_rule name="a">
+  <tokens_def>
+   <token type="reserved_word" val="select">
+    /^SELECT\b/i
+   </token>
+   <token type="reserved_word" val="from">
+    /^FROM\b/i
+   </token>
+   <token type="reserved_word" val="inner">
+    /^INNER\b/i
+   </token>
+   <token type="reserved_word" val="join">
+    /^JOIN\b/i
+   </token>
+   <token type="reserved_word" val="left">
+    /^LEFT\b/i 
+   </token>
+   <token type="reserved_word" val="on">
+    /^ON\b/i
+   </token>
+   <token type="reserved_word" val="where">
+    /^WHERE\b/i
+   </token>
+   <token type="reserved_word" val="order">
+    /^ORDER\b/i
+   </token>
+   <token type="reserved_word" val="by">
+    /^BY\b/i
+   </token>
+   <token type="reserved_word" val="group">
+    /^GROUP\b/i
+   </token>
+   <token type="reserved_word" val="as">
+   	/^AS\b/i
+   </token>
+   <token type="reserved_word" val="like">
+   	/^LIKE(?=(\b)|(\())/i
+   </token>  
+   <token type="SPECIAL_ITEM" val="star">
+    /^[\*]/
+   </token>
+   <token type="SPECIAL_ITEM" val="fun_head">
+    /^(count|avg|sum)(?=\()/i
+   </token>
+   <token type="SPECIAL_ITEM" val="num">
+    /^([+-]?[1-9][0-9]*)|[+-]?[0-9]*[\.][0-9]/
+   </token>
+   <token type="SPECIAL_ITEM" val="logicalop">
+    /^AND(?=(\b)|(\())|OR(?=(\b)|(\())/i
+   </token>
+   <token type="SPECIAL_ITEM" val="op">
+    /^[\+\-\/]/i
+   </token>
+   <token type="SPECIAL_ITEM" val="relop">
+   <![CDATA[/^(<>|<=|>=|>|<|=)/i]]>
+   </token>
+   <token type="lexical_element" val="item">
+    /^[A-Za-z][A-Za-z0-9_]*/
+   </token>
+   <token type="Delim" val="ws">
+    /^[\s]+/
+   </token>
+   <token type="SPECIAL_ITEM" val="comma">
+    /^,/
+   </token>
+   <token type="SPECIAL_ITEM" val="point">
+    /^\./
+   </token>
+   <token type="SPECIAL_ITEM" val="open_par">
+    /^\(/
+   </token>
+   <token type="SPECIAL_ITEM" val="close_par">
+    /^\)/
+   </token>
+   <token type="SPECIAL_ITEM" val="sstring">
+    /^(\"[a-zA-Z0-9_,:\.;\\\|!\$\/\(\)=\?\^\[\]@#]*\")|('[a-zA-Z0-9_,:\.;\\\|!\$\/\(\)=\?\^\[\]@#\s]*')/
+   </token>
+  </tokens_def>
+  <tokens_attributes>
+  	<Attr>field</Attr>
+  	<Attr>table</Attr>
+  </tokens_attributes>
+  <productions>
+   <production>
+    RIC_SQL = SELECT2 
+   </production>
+   <production>
+    SELECT2 = select ws HLIST ws from ws TABLES_LIST WHERE_CLAUSE GROUPBY_CLAUSE ORDERBY_CLAUSE
+   </production>
+   <production>
+    HLIST = FIELD_OBJ HLIST1 | FUN_CALL HLIST1 | star
+   </production>
+   <production>
+    HLIST1 = SPACE comma SPACE HLIST | epsilon
+   </production>
+   <production>
+    FUN_CALL = fun_head open_par SPACE FIELD_OBJ1 SPACE close_par
+   </production>
+   <production>
+   	FIELD_OBJ1 = item
+   </production>
+   <production>
+    FIELD = item FIELD_POINT
+   </production>
+   <production>
+    FIELD_POINT = point item | epsilon
+   </production>
+   <production>
+    FIELD_OBJ = FIELD ASFIELD_OBJ 
+   </production>
+   <production>
+   	ASFIELD_OBJ = ws as ws FIELD_OBJ1 | epsilon
+   </production>
+   <production>
+    FIELD_LIST = FIELD FIELD_LIST1
+   </production>
+   <production>
+    FIELD_LIST1 = SPACE comma SPACE FIELD_LIST | epsilon
+   </production>
+   <production>
+    TABLE = item 
+   </production>
+   <production>
+    TABLES_LIST = TABLE TABLES_LIST1 | open_par SPACE TABLES_LIST SPACE close_par
+   </production>
+   <production>
+    TABLES_LIST1 = SPACE comma SPACE TABLES_LIST_SIMPLE | TABLES_LIST_CX1 | epsilon
+   </production>   
+   <production>
+    TABLES_LIST_SIMPLE = TABLE TABLES_LIST_SIMPLE1
+   </production>
+   <production>
+    TABLES_LIST_SIMPLE1 = SPACE comma SPACE TABLES_LIST_SIMPLE | epsilon
+   </production>
+   <production>
+    TABLES_LIST_CX = SPACE open_par SPACE TABLES_LIST_CX1 SPACE close_par | TABLES_LIST_CX1
+   </production>
+   <production>
+    TABLES_LIST_CX1 = SPACE TABLES_LIST_CX1_INNER TABLES_LIST_CX | SPACE TABLES_LIST_CX1_LEFT TABLES_LIST_CX | epsilon
+   </production>
+   <production>
+    TABLES_LIST_CX1_INNER = inner ws join ws TABLE ws ON_CLAUSE
+   </production>
+   <production>
+    TABLES_LIST_CX1_LEFT = left ws join ws TABLE ws ON_CLAUSE
+   </production>
+   <production>
+   	OPS = op | star
+   </production>
+   <production>
+   	NEXTEXPR2 = SPACE OPS SPACE EXPRITEM2 | epsilon
+   </production>
+   <production>
+   	NEXTEXPR1 = SPACE relop SPACE EXPRITEM1 | epsilon
+   </production>
+   <production>
+   	EXPRITEM = open_par SPACE EXPRL SPACE close_par | num | FIELD | sstring 
+   </production>
+   <production>
+   	EXPRITEM2 = EXPRITEM NEXTEXPR2 
+   </production>
+   <production>
+   	EXPRITEM1 = EXPRITEM2 NEXTEXPR1
+   </production>
+   <production>
+   	NEXTEXPRL = SPACE logicalop SPACE EXPRL | epsilon
+   </production>
+   <production>
+   	EXPRL = EXPRITEM1 NEXTEXPRL
+   </production>
+   <production>
+    ON_CLAUSE = on ws EXPRL | epsilon 
+   </production> 
+   <production>
+    WHERE_CLAUSE = ws where ws EXPRL | epsilon
+   </production>
+   <production>
+    GROUPBY_CLAUSE = ws group ws by ws GROUPBY_CLAUSE1 | epsilon
+   </production>
+   <production>
+    GROUPBY_CLAUSE1 = FIELD_LIST
+   </production>
+   <production>
+    ORDERBY_CLAUSE = ws order ws by ws ORDERBY_CLAUSE1 | epsilon
+   </production>
+   <production>
+    ORDERBY_CLAUSE1 = FIELD_LIST
+   </production>
+  </productions>
+ </grammar_rule>
+</grammar_rules>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<grammar_rules>
+ <grammar_rule name="a">
+  <tokens_def>
+   <token type="RESERVED_WORD" val="array">
+    /^[Aa]rray/i
+   </token>
+   <token type="SPECIAL_ITEM" val="arrow">
+    /^=>/i
+   </token>
+   <token type="SPECIAL_ITEM" val="open_par">
+    /^\(/i
+   </token>
+   <token type="SPECIAL_ITEM" val="close_par">
+    /^\)/i
+   </token>
+   <token type="SPECIAL_ITEM" val="virgola">
+    /^,/i
+   </token>
+   <token type="DELIM" val="ws">
+    /^[\s]+/i
+   </token>
+   <token type="LEXICAL_ELEMENT" val="item1">
+    /^'(?:[^'\\\\]|(?:\\\\\\\\)|(?:\\\\\\\\)*\\\\.{1})*'/i
+   </token>
+   <token type="LEXICAL_ELEMENT" val="item2">
+    /^\"(?:[^\"\\\\]|(?:\\\\\\\\)|(?:\\\\\\\\)*\\\\.{1})*\"/i
+   </token>
+   <token type="LEXICAL_ELEMENT" val="num">
+    /^[0-9][0-9]*/i
+   </token>
+   <token type="LEXICAL_ELEMENT" val="const">
+    /^[A-Z@_]+/
+   </token>
+  </tokens_def>
+  <tokens_attributes>
+  </tokens_attributes>
+  <productions>
+   <production name="">
+    START = PHP_ARRAY
+   </production>
+   <production name="">
+    PHP_ARRAY = array SPACE open_par SPACE ITEMS_SEQ SPACE close_par
+   </production>
+   <production name="">
+   	ITEMS_SEQ = ITEMS SPACE NEXT_ITEM | PHP_ARRAY SPACE NEXT_ITEM | epsilon
+   </production>
+   <production>
+   	ITEMS = ITEMS1 | ITEMS2
+   </production>
+   <production name="">
+    ITEMS1 = ITEM SPACE arrow SPACE ITEM | ITEM SPACE arrow SPACE PHP_ARRAY
+   </production>
+   <production name="">
+   	ITEMS2 = ITEM
+   </production>
+   <production name="">
+    ITEM =  item1 | item2 | num | const 
+   </production>
+   <production name="">
+    NEXT_ITEM = virgola SPACE ITEMS_SEQ | epsilon
+   </production>
+  </productions>
+ </grammar_rule>
+</grammar_rules>
