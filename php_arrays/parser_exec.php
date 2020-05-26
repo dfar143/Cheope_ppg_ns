@@ -2,7 +2,7 @@
 namespace Cheope_ppp_ns\php_arrays;
 
 require_once("php_arrays_def.php");
-require_once("../src/Parser.php");
+require_once(__DIR__ . "/../src/Parser.php");
 
 if(isset($argv[1]))
  $inputFileName = $argv[1];
