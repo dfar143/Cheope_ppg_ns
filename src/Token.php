@@ -1,6 +1,8 @@
 <?
 namespace Cheope_ppp_ns\src;
 
+require_once("generic_const.php");
+
 class Token
 {
  const TYPE_RESERVED_WORD="Reserved_word";
