@@ -1,10 +1,10 @@
 <?
 namespace Cheope_ppp_ns\ric_sql;
-require_once("../src/Parser_grammar_rule.php");
+require_once(__DIR__ . "/../src/Parser_grammar_rule.php");
 
 define('A_GRAMMAR_RULE',"a");
 
-class  Parser_grammar_rule_a extends parser_grammar_rule
+class  Parser_grammar_rule_a extends \Cheope_ppp_ns\src\Parser_grammar_rule
 {
 
 
@@ -44,7 +44,7 @@ function space()
 {
 $parser = &$this->getParser();
 $localTokensBufferPointer = $this->getTokensBufferPointer();
-$res1 = $parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res1 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 if(! $res1)
 $this->backtrack($localTokensBufferPointer);
 $res2 = true;
@@ -100,7 +100,7 @@ $res18=false;
 $res19=false;
 $res110=false;
 
-$res11=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_SELECT);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_SELECT);
 
 if(!$res11)
 {
@@ -108,7 +108,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res12)
 {
@@ -124,7 +124,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res14=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res14=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res14)
 {
@@ -132,7 +132,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res15=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_FROM);
+$res15=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_FROM);
 
 if(!$res15)
 {
@@ -140,7 +140,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res16=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res16=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res16)
 {
@@ -275,7 +275,7 @@ if(!$res2)
 {
 $res31=false;
 
-$res31=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_STAR);
+$res31=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_STAR);
 
 if(!$res31)
 {
@@ -316,7 +316,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_COMMA);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_COMMA);
 
 if(!$res12)
 {
@@ -371,7 +371,7 @@ $res14=false;
 $res15=false;
 $res16=false;
 
-$res11=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_FUN_HEAD);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_FUN_HEAD);
 
 if(!$res11)
 {
@@ -379,7 +379,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OPEN_PAR);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OPEN_PAR);
 
 if(!$res12)
 {
@@ -411,7 +411,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res16=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_CLOSE_PAR);
+$res16=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_CLOSE_PAR);
 
 if(!$res16)
 {
@@ -448,7 +448,7 @@ $localTokensBufferPointer = $this->getTokensBufferPointer();
 $res1=true;
 $res11=false;
 
-$res11=$parser->match(Token::TYPE_LEXICAL_ELEMENT,RIC_SQL_2_TOKEN_VAL_ITEM,RIC_SQL_2_TOKEN_ATTR_FIELD);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,RIC_SQL_2_TOKEN_VAL_ITEM,RIC_SQL_2_TOKEN_ATTR_FIELD);
 
 if(!$res11)
 {
@@ -477,7 +477,7 @@ $res11=false;
 $res12=false;
 
 $token = &$parser->getCurrentToken();
-$res11=$parser->match(Token::TYPE_LEXICAL_ELEMENT,RIC_SQL_2_TOKEN_VAL_ITEM,RIC_SQL_2_TOKEN_ATTR_FIELD);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,RIC_SQL_2_TOKEN_VAL_ITEM,RIC_SQL_2_TOKEN_ATTR_FIELD);
 
 if(!$res11)
 {
@@ -516,7 +516,7 @@ $res2=true;
 $res11=false;
 $res12=false;
 
-$res11=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_POINT);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_POINT);
 
 if(!$res11)
 {
@@ -525,7 +525,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_LEXICAL_ELEMENT,RIC_SQL_2_TOKEN_VAL_ITEM,RIC_SQL_2_TOKEN_ATTR_FIELD);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,RIC_SQL_2_TOKEN_VAL_ITEM,RIC_SQL_2_TOKEN_ATTR_FIELD);
 
 if(!$res12)
 {
@@ -597,7 +597,7 @@ $res12=false;
 $res13=false;
 $res14=false;
 
-$res11=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res11)
 {
@@ -605,7 +605,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_AS);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_AS);
 
 if(!$res12)
 {
@@ -613,7 +613,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res13=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res13)
 {
@@ -705,7 +705,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_COMMA);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_COMMA);
 
 if(!$res12)
 {
@@ -755,7 +755,7 @@ $localTokensBufferPointer = $this->getTokensBufferPointer();
 $res1=true;
 $res11=false;
 
-$res11=$parser->match(Token::TYPE_LEXICAL_ELEMENT,RIC_SQL_2_TOKEN_VAL_ITEM,RIC_SQL_2_TOKEN_ATTR_TABLE);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,RIC_SQL_2_TOKEN_VAL_ITEM,RIC_SQL_2_TOKEN_ATTR_TABLE);
 
 if(!$res11)
 {
@@ -814,7 +814,7 @@ $res23=false;
 $res24=false;
 $res25=false;
 
-$res21=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OPEN_PAR);
+$res21=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OPEN_PAR);
 
 if(!$res21)
 {
@@ -846,7 +846,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res25=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_CLOSE_PAR);
+$res25=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_CLOSE_PAR);
 
 if(!$res25)
 {
@@ -896,7 +896,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_COMMA);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_COMMA);
 
 if(!$res12)
 {
@@ -1014,7 +1014,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_COMMA);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_COMMA);
 
 if(!$res12)
 {
@@ -1078,7 +1078,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OPEN_PAR);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OPEN_PAR);
 
 if(!$res12)
 {
@@ -1110,7 +1110,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res16=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_CLOSE_PAR);
+$res16=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_CLOSE_PAR);
 
 if(!$res16)
 {
@@ -1263,7 +1263,7 @@ $res15=false;
 $res16=false;
 $res17=false;
 
-$res11=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_INNER);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_INNER);
 
 if(!$res11)
 {
@@ -1271,7 +1271,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res12)
 {
@@ -1279,7 +1279,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res13=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_JOIN);
+$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_JOIN);
 
 if(!$res13)
 {
@@ -1287,7 +1287,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res14=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res14=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res14)
 {
@@ -1303,7 +1303,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res16=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res16=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res16)
 {
@@ -1356,7 +1356,7 @@ $res15=false;
 $res16=false;
 $res17=false;
 
-$res11=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_LEFT);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_LEFT);
 
 if(!$res11)
 {
@@ -1364,7 +1364,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res12)
 {
@@ -1372,7 +1372,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res13=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_JOIN);
+$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_JOIN);
 
 if(!$res13)
 {
@@ -1380,7 +1380,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res14=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res14=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res14)
 {
@@ -1396,7 +1396,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res16=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res16=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res16)
 {
@@ -1444,7 +1444,7 @@ $res1=true;
 $res2=true;
 $res11=false;
 
-$res11=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OP);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OP);
 
 if(!$res11)
 {
@@ -1460,7 +1460,7 @@ if(!$res1)
 {
 $res21=false;
 
-$res21=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_STAR);
+$res21=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_STAR);
 
 if(!$res21)
 {
@@ -1563,7 +1563,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_RELOP);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_RELOP);
 
 if(!$res12)
 {
@@ -1620,7 +1620,7 @@ $res13=false;
 $res14=false;
 $res15=false;
 
-$res11=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OPEN_PAR);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_OPEN_PAR);
 
 if(!$res11)
 {
@@ -1652,7 +1652,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res15=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_CLOSE_PAR);
+$res15=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_CLOSE_PAR);
 
 if(!$res15)
 {
@@ -1676,7 +1676,7 @@ if(!$res1)
 {
 $res21=false;
 
-$res21=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_NUM);
+$res21=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_NUM);
 
 if(!$res21)
 {
@@ -1712,7 +1712,7 @@ if(!$res3)
 {
 $res41=false;
 
-$res41=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_SSTRING);
+$res41=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_SSTRING);
 
 if(!$res41)
 {
@@ -1829,7 +1829,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_LOGICALOP);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,RIC_SQL_2_TOKEN_VAL_LOGICALOP);
 
 if(!$res12)
 {
@@ -1920,7 +1920,7 @@ $res11=false;
 $res12=false;
 $res13=false;
 
-$res11=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_ON);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_ON);
 
 if(!$res11)
 {
@@ -1928,7 +1928,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res12)
 {
@@ -1972,7 +1972,7 @@ $res12=false;
 $res13=false;
 $res14=false;
 
-$res11=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res11)
 {
@@ -1980,7 +1980,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_WHERE);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_WHERE);
 
 if(!$res12)
 {
@@ -1988,7 +1988,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res13=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res13)
 {
@@ -2036,7 +2036,7 @@ $res14=false;
 $res15=false;
 $res16=false;
 
-$res11=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res11)
 {
@@ -2044,7 +2044,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_GROUP);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_GROUP);
 
 if(!$res12)
 {
@@ -2052,7 +2052,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res13=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res13)
 {
@@ -2060,7 +2060,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res14=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_BY);
+$res14=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_BY);
 
 if(!$res14)
 {
@@ -2068,7 +2068,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res15=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res15=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res15)
 {
@@ -2147,7 +2147,7 @@ $res14=false;
 $res15=false;
 $res16=false;
 
-$res11=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res11)
 {
@@ -2155,7 +2155,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_ORDER);
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_ORDER);
 
 if(!$res12)
 {
@@ -2163,7 +2163,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res13=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res13)
 {
@@ -2171,7 +2171,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res14=$parser->match(Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_BY);
+$res14=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,RIC_SQL_2_TOKEN_VAL_BY);
 
 if(!$res14)
 {
@@ -2179,7 +2179,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res15=$parser->match(Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
+$res15=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,RIC_SQL_2_TOKEN_VAL_WS);
 
 if(!$res15)
 {
