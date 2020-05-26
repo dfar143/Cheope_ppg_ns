@@ -1,7 +1,7 @@
 <?
 namespace Cheope_ppp_ns\grammar_rule_gen;
 
-require_once("../src/Parser_grammar_rule.php");
+require_once(__DIR__ . "/../src/Parser_grammar_rule.php");
 
 define('A_GRAMMAR_RULE',"a");
 
@@ -2245,3 +2245,4 @@ return true;
 }
 
 }
+?>

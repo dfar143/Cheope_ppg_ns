@@ -1,7 +1,7 @@
 <?
 namespace Cheope_ppp_ns\grammar_rule_gen;
 
-require_once("../src/Generic_interface.php");
+require_once(__DIR__ . "/../src/Generic_interface.php");
 require_once("Php_class_gen.php");
 
 class Parser_def_gen extends \Cheope_ppp_ns\src\Generic_interface
@@ -84,8 +84,8 @@ class Parser_def_gen extends \Cheope_ppp_ns\src\Generic_interface
  	$grDefs = $this->getGrammarDefs(); 	 
   
   $phpClassGen->puts($phpClassGen->EOL());
-  $phpClassGen->putFunctionCall("require_once",array("\"../src/Lex_rules_container.php\"")); 
-  $phpClassGen->putFunctionCall("require_once",array("\"../src/Parser_grammar_rules_container.php\""));
+  $phpClassGen->putFunctionCall("require_once",array("\"__DIR__ . /../src/Lex_rules_container.php\"")); 
+  $phpClassGen->putFunctionCall("require_once",array("\"__DIR__ . /../src/Parser_grammar_rules_container.php\""));
   $phpClassGen->putFunctionCall("require_once",array("\"" . ucFirst($prjName) . 
   STRING_UNDERSCORE . "parser_grammar_rules.php\""));
   $phpClassGen->puts($phpClassGen->EOL());
@@ -164,7 +164,7 @@ class Parser_def_gen extends \Cheope_ppp_ns\src\Generic_interface
    {
     $phpClassGen->putAssignment("\$" . $prjName1 . "Rule" . $j . 
     (($i>0)?('_' . $i):('')),
-    $phpClassGen->constructorCall("Lex_rule",array("\"regola" . $j . "\"")));
+    $phpClassGen->constructorCall("\\Cheope_ppp_ns\\src\\Lex_rule",array("\"regola" . $j . "\"")));
     $j++;
    }      
    $phpClassGen->puts($phpClassGen->EOL());
@@ -175,7 +175,7 @@ class Parser_def_gen extends \Cheope_ppp_ns\src\Generic_interface
    	$phpClassGen->putMethodCall("\$"  . $prjName1 .  "Rule" . $j . (($i>0)?('_' . $i):(''))
    	,"setRegexp",array("\"" . trim($regexp) . "\""));
    	$phpClassGen->putMethodCall("\$"  . $prjName1 .  "Rule" . $j . (($i>0)?('_' . $i):(''))
-   	,"setTokenType",array("Token::TYPE" . 
+   	,"setTokenType",array("\\Cheope_ppp_ns\\src\\Token::TYPE" . 
    	STRING_UNDERSCORE . strToUpper($tokensTypes[$j])));
    	$phpClassGen->putMethodCall("\$"  . $prjName1 . "Rule" . $j . (($i>0)?('_' . $i):(''))
    	,"setTokenVal",array(strToUpper($prjName) . 
@@ -227,7 +227,7 @@ class Parser_def_gen extends \Cheope_ppp_ns\src\Generic_interface
       
    if($i==0)
     $phpClassGen->putAssignment("\$" . $prjName1 . "DefGrRules",
-    $phpClassGen->constructorCall("Parser_grammar_rules_container",
+    $phpClassGen->constructorCall("\\Cheope_ppp_ns\\src\\Parser_grammar_rules_container",
     array(strToUpper($prjName) . 
     STRING_UNDERSCORE . "PARSER_GRAMMAR_RULE_CONTAINER" . STRING_UNDERSCORE . "1")));     
    

@@ -43,7 +43,7 @@ foreach($grDefs as $ind=>$grDef)
  $phpClassGen = &$grRuleGen->getPhpClassGen();
  if($i == 0)
  {
-  $phpClassGen->setRequireOnces(array("../src/" . ucFirst(Grammar_rule_gen::RULE_SUFFIX) 
+  $phpClassGen->setRequireOnces(array("__DIR__ . /../src/" . ucFirst(Grammar_rule_gen::RULE_SUFFIX) 
   . STRING_POINT . "php"));  
  }
  else

@@ -1,8 +1,8 @@
 <?
 namespace Cheope_ppp_ns\grammar_rule_gen;
 
-require_once("../src/Lex_rules_container.php");
-require_once("../src/Parser_grammar_rules_container.php");
+require_once(__DIR__ . "/../src/Lex_rules_container.php");
+require_once(__DIR__ . "/../src/Parser_grammar_rules_container.php");
 require_once("Ric_sql_2_parser_grammar_rules.php");
 
 define('RIC_SQL_2_TOKEN_VAL_SELECT',"select");

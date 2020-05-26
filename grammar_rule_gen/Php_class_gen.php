@@ -1,7 +1,7 @@
 <?
 namespace Cheope_ppp_ns\grammar_rule_gen;
 
-require_once("../src/generic_const.php");
+require_once(__DIR__ . "/../src/Generic_interface.php");
 
 define('PARENT_CLASS',"parser_grammar_rule");
 

@@ -1,11 +1,11 @@
 <?
 namespace Cheope_ppp_ns\grammar_rule_gen;
 
-require_once("../src/html_const.php");
-require_once("../src/Generic_interface.php");
+require_once(__DIR__ .  "/../src/html_const.php");
+require_once(__DIR__ . "/../src/Generic_interface.php");
 require_once("Php_class_gen.php");
-require_once("../src/Parser.php");
-require_once("../src/Tokens_container.php");
+require_once(__DIR__ . "/../src/Parser.php");
+require_once(__DIR__ . "/../src/Tokens_container.php");
 
 class Grammar_rule_gen extends \Cheope_ppp_ns\src\Generic_interface
 {
@@ -200,7 +200,7 @@ private function getCodeFromTransientLexema($actComposedRightElement)
  	$tokType = $tok1->getType();
  	if($tokVal == TOKEN_VAL_TERMINALE)
  	{
- 	 $body .= '$parser->match(' . "Token::" . \Cheope_ppp_ns\src\Token::TYPE_SUFFIX . 
+ 	 $body .= '$parser->match(' . "\\Cheope_ppp_ns\\src\\Token::" . \Cheope_ppp_ns\src\Token::TYPE_SUFFIX . 
  	 STRING_UNDERSCORE . strtoupper($tok3->getType()) . 
  	 STRING_COMMA . strtoupper($prjName) . STRING_UNDERSCORE . "TOKEN" . 
  	 STRING_UNDERSCORE . \Cheope_ppp_ns\src\Token::VAL_SUFFIX . STRING_UNDERSCORE . strtoupper($tok3->getVal()) . 
@@ -389,7 +389,7 @@ private function genMethodBodyBody($actRightElements)
    $phpClassGen->setMethodsArgs($phpClassGenMethodsArgs);
    $methodBody = '$parser = &$this->getParser();' . $phpClassGen->EOL();
    $methodBody .= '$localTokensBufferPointer = $this->getTokensBufferPointer();' . $phpClassGen->EOL();
-   $methodBody .= '$res1 = $parser->match(Token::TYPE_DELIM,' . strtoupper($prjName) . STRING_UNDERSCORE . "TOKEN" . 
+   $methodBody .= '$res1 = $parser->match(\\Cheope_ppp_ns\\src\\Token::TYPE_DELIM,' . strtoupper($prjName) . STRING_UNDERSCORE . "TOKEN" . 
  	 STRING_UNDERSCORE . \Cheope_ppp_ns\src\Token::VAL_SUFFIX . STRING_UNDERSCORE . 'WS);' . $phpClassGen->EOL();
    $methodBody .= 'if(! $res1)' . $phpClassGen->EOL();
    $methodBody .= '$this->backtrack($localTokensBufferPointer);' . $phpClassGen->EOL();

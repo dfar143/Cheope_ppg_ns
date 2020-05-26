@@ -1,0 +1,225 @@
+
+
+define('PRODUZ_1_GRAMMAR_RULE',"produz_1");
+
+class  Parser_grammar_rule_produz_1 extends parser_grammar_rule
+{
+
+
+function __construct()
+{
+parent::__construct(PRODUZ_1_GRAMMAR_RULE);
+}
+
+function init()
+{
+
+}
+
+function getTokensBufferPointer()
+{
+$parser = &$this->getParser();
+$tokensBufferIter = &$parser->getTokensBufferIterator();
+return ($tokensBufferIter->pos());
+
+}
+
+function backtrack($actTokensBufferPointer)
+{
+$parser = &$this->getParser();
+$tokensBufferIter = &$parser->getTokensBufferIterator();
+$tokensBufferIter->reset();
+$i=0;
+while($i <= $actTokensBufferPointer-1)
+{
+$tokensBufferIter->next();
+$i++;
+}
+
+}
+
+function space()
+{
+$parser = &$this->getParser();
+$localTokensBufferPointer = $this->getTokensBufferPointer();
+$res1 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,EXAMPLE_TOKEN_VAL_WS);
+if(! $res1)
+$this->backtrack($localTokensBufferPointer);
+$res2 = true;
+$res = $res1 || $res2;
+if(! $res)
+return false;
+return true;
+
+}
+
+function exec()
+{
+$parser = &$this->getParser();
+$lex = &$parser->getLex();
+$localTokensBufferPointer = $this->getTokensBufferPointer();
+
+$res1=true;
+$res2=true;
+$res3=true;
+$res11=false;
+$res12=false;
+$res13=false;
+$res14=false;
+$res15=false;
+
+$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+
+if(!$res11)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+
+if(!$res12)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+
+if(!$res13)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+$res14=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+
+if(!$res14)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+$res15=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+
+if(!$res15)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+}
+
+}
+
+}
+
+}
+
+}
+
+$res1=$res11 && $res12 && $res13 && $res14 && $res15;
+
+if(!$res1)
+{
+$res21=false;
+
+$res21=$this->GUP();
+
+if(!$res21)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+}
+
+$res2=$res21;
+}
+
+
+if(!$res2)
+{
+$res31=false;
+$res32=false;
+
+$res31=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+
+if(!$res31)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+$res32=$this->F();
+
+if(!$res32)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+}
+
+}
+
+$res3=$res31 && $res32;
+}
+
+$res=$res1 | $res2 | $res3;
+
+if (! $res)
+return false;
+return true;
+}
+
+function GUP()
+{
+$parser = &$this->getParser();
+$lex = &$parser->getLex();
+$localTokensBufferPointer = $this->getTokensBufferPointer();
+
+$res1=true;
+$res11=false;
+$res12=false;
+$res13=false;
+
+$res11=$this->Alfa();
+
+if(!$res11)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+
+if(!$res12)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+$res13=$this->Alfa();
+
+if(!$res13)
+{
+$this->backtrack($localTokensBufferPointer);
+}
+else
+{
+}
+
+}
+
+}
+
+$res1=$res11 && $res12 && $res13;
+$res=$res1;
+
+if (! $res)
+return false;
+return true;
+}
+
+}
