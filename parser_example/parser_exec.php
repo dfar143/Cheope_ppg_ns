@@ -1,8 +1,8 @@
 <?
-namespace Cheope_ppp_ns\parser_example;
+namespace dfar143\cheope_ppp_ns\parser_example;
 
 require_once("example_1_def.php");
-require_once("../src/Parser.php");
+require_once(__DIR__ . "/../src/Parser.php");
 
 if(isset($argv[1]))
  $inputFileName = $argv[1];

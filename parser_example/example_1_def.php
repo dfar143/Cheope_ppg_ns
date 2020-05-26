@@ -1,5 +1,5 @@
 <?
-namespace Cheope_ppp_ns\parser_example;
+namespace dfar143\cheope_ppp_ns\parser_example;
 
 require_once("../src/Lex_rules_container.php");
 require_once("../src/Parser_grammar_rules_container.php");
