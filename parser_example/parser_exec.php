@@ -1,18 +1,18 @@
 <?
-namespace dfar143\cheope_ppp_ns\parser_example;
+namespace Cheope_ppg_ns\parser_example;
 
 require_once("example_1_def.php");
-require_once(__DIR__ . "/../src/Parser.php");
+require_once("../src/Parser.php");
 
 if(isset($argv[1]))
  $inputFileName = $argv[1];
 else
  $inputFileName = "example.txt";
  
-$lex = new \Cheope_ppp_ns\src\Lexer_3($inputFileName);
+$lex = new \Cheope_ppg_ns\src\Lexer_3($inputFileName);
 $lex->setRules($example1DefRules);
 
-$parser = new \Cheope_ppp_ns\src\Parser($lex);
+$parser = new \Cheope_ppg_ns\src\Parser($lex);
 $parser->setGrammarRulesContainer($example1DefGrRules);
 $parser->setLogEnabled(true);
 $parser->setEnableLogOnFile(true);

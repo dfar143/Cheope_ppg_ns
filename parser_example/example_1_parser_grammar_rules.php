@@ -1,11 +1,11 @@
 <?
-namespace dfar143\cheope_ppp_ns\parser_example;
+namespace Cheope_ppg_ns\parser_example;
 
 require_once("../src/Parser_grammar_rule.php");
 
 define('A_GRAMMAR_RULE',"a");
 
-class  Parser_grammar_rule_a extends \Cheope_ppp_ns\src\parser_grammar_rule
+class  Parser_grammar_rule_a extends \Cheope_ppg_ns\src\parser_grammar_rule
 {
 
 
@@ -45,7 +45,7 @@ function space()
 {
 $parser = &$this->getParser();
 $localTokensBufferPointer = $this->getTokensBufferPointer();
-$res1 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,EXAMPLE_1_TOKEN_VAL_WS);
+$res1 = $parser->match(\Cheope_ppg_ns\src\Token::TYPE_DELIM,EXAMPLE_1_TOKEN_VAL_WS);
 if(! $res1)
 $this->backtrack($localTokensBufferPointer);
 $res2 = true;
@@ -76,7 +76,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_B);
+$res12=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_B);
 
 if(!$res12)
 {
@@ -113,7 +113,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res22=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_B);
+$res22=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_B);
 
 if(!$res22)
 {
@@ -144,7 +144,7 @@ $localTokensBufferPointer = $this->getTokensBufferPointer();
 $res1=true;
 $res11=false;
 
-$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_A);
+$res11=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_A);
 
 if(!$res11)
 {
@@ -171,7 +171,7 @@ $localTokensBufferPointer = $this->getTokensBufferPointer();
 $res1=true;
 $res11=false;
 
-$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_B);
+$res11=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_B);
 
 if(!$res11)
 {
@@ -194,7 +194,7 @@ return true;
 
 define('B_GRAMMAR_RULE',"b");
 
-class  Parser_grammar_rule_b extends \Cheope_ppp_ns\src\parser_grammar_rule
+class  Parser_grammar_rule_b extends \Cheope_ppg_ns\src\parser_grammar_rule
 {
 
 
@@ -271,7 +271,7 @@ if(!$res1)
 {
 $res21=false;
 
-$res21=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_C);
+$res21=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_C);
 
 if(!$res21)
 {
@@ -300,7 +300,7 @@ $localTokensBufferPointer = $this->getTokensBufferPointer();
 $res1=true;
 $res11=false;
 
-$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_B);
+$res11=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_1_TOKEN_VAL_B);
 
 if(!$res11)
 {
