@@ -1,5 +1,5 @@
 <?
-namespace Cheope_ppp_ns\grammar_rule_gen;
+namespace Cheope_ppg_ns\grammar_rule_gen;
 
 require_once("Grammar_defs_xml_reader.php");
 

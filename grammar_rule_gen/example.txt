@@ -42,7 +42,7 @@ function space()
 {
 $parser = &$this->getParser();
 $localTokensBufferPointer = $this->getTokensBufferPointer();
-$res1 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,EXAMPLE_TOKEN_VAL_WS);
+$res1 = $parser->match(Token::TYPE_DELIM,EXAMPLE_TOKEN_VAL_WS);
 if(! $res1)
 $this->backtrack($localTokensBufferPointer);
 $res2 = true;
@@ -68,7 +68,7 @@ $res13=false;
 $res14=false;
 $res15=false;
 
-$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+$res11=$parser->match(Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
 
 if(!$res11)
 {
@@ -76,7 +76,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+$res12=$parser->match(Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
 
 if(!$res12)
 {
@@ -84,7 +84,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+$res13=$parser->match(Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
 
 if(!$res13)
 {
@@ -92,7 +92,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res14=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+$res14=$parser->match(Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
 
 if(!$res14)
 {
@@ -100,7 +100,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res15=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+$res15=$parser->match(Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
 
 if(!$res15)
 {
@@ -143,7 +143,7 @@ if(!$res2)
 $res31=false;
 $res32=false;
 
-$res31=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+$res31=$parser->match(Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
 
 if(!$res31)
 {
@@ -192,7 +192,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res12=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
+$res12=$parser->match(Token::TYPE_LEXICAL_ELEMENT,EXAMPLE_TOKEN_VAL_TERMINALE);
 
 if(!$res12)
 {

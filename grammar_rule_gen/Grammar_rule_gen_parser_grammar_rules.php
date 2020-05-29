@@ -1,12 +1,12 @@
 <?
-namespace Cheope_ppp_ns\grammar_rule_gen;
+namespace Cheope_ppg_ns\grammar_rule_gen;
 
-require_once(__DIR__ . "/../src/Parser_grammar_rule.php");
+require_once("../src/Parser_grammar_rule.php");
 
 define('PRODUZ_1_GRAMMAR_RULE',"Produz_1");
 
 
-class Parser_grammar_rule_produz_1 extends \Cheope_ppp_ns\src\Parser_grammar_rule
+class Parser_grammar_rule_produz_1 extends \Cheope_ppg_ns\src\Parser_grammar_rule
 {
 	
  var $leftTerm;
@@ -122,7 +122,7 @@ class Parser_grammar_rule_produz_1 extends \Cheope_ppp_ns\src\Parser_grammar_rul
  	}
  	else 
  	{
- 	 $res12 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,TOKEN_VAL_EQUAL);
+ 	 $res12 = $parser->match(\Cheope_ppg_ns\src\Token::TYPE_SPECIAL_ITEM,TOKEN_VAL_EQUAL);
  	 if(! $res12)
  	 {
  	 	$this->backtrack($localTokensBufferPointer);
@@ -150,7 +150,7 @@ class Parser_grammar_rule_produz_1 extends \Cheope_ppp_ns\src\Parser_grammar_rul
   
   $localTokensBufferPointer = $this->getTokensBufferPointer();
   
-  $res1 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,TOKEN_VAL_WS);
+  $res1 = $parser->match(\Cheope_ppg_ns\src\Token::TYPE_DELIM,TOKEN_VAL_WS);
   if(! $res1)
    $this->backtrack($localTokensBufferPointer);
    
@@ -183,7 +183,7 @@ class Parser_grammar_rule_produz_1 extends \Cheope_ppp_ns\src\Parser_grammar_rul
   else
   {
    $tok = &$parser->getCurrentToken();
-   $res12 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,TOKEN_VAL_NONTERMINALE);
+   $res12 = $parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,TOKEN_VAL_NONTERMINALE);
    if(! $res12)
    {
     $this->backtrack($localTokensBufferPointer);
@@ -269,7 +269,7 @@ class Parser_grammar_rule_produz_1 extends \Cheope_ppp_ns\src\Parser_grammar_rul
   $res23 = false;
   
   $tok = &$parser->getCurrentToken();
-  $res11 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,TOKEN_VAL_TERMINALE); 
+  $res11 = $parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,TOKEN_VAL_TERMINALE); 
   if(! $res11)
   {
    $this->backtrack($localTokensBufferPointer);
@@ -296,7 +296,7 @@ class Parser_grammar_rule_produz_1 extends \Cheope_ppp_ns\src\Parser_grammar_rul
   if(! $res1)
   {
    $tok = &$parser->getCurrentToken();
-   $res21 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,TOKEN_VAL_NONTERMINALE);
+   $res21 = $parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,TOKEN_VAL_NONTERMINALE);
    if(! $res21)
    {
    	$this->backtrack($localTokensBufferPointer);
@@ -351,7 +351,7 @@ class Parser_grammar_rule_produz_1 extends \Cheope_ppp_ns\src\Parser_grammar_rul
   
   if(! $res1)
   {
-   $res21 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,TOKEN_VAL_OR);
+   $res21 = $parser->match(\Cheope_ppg_ns\src\Token::TYPE_SPECIAL_ITEM,TOKEN_VAL_OR);
    if(! $res21)
    {
     $this->backtrack($localTokensBufferPointer);

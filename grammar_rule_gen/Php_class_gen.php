@@ -1,11 +1,11 @@
 <?
-namespace Cheope_ppp_ns\grammar_rule_gen;
+namespace Cheope_ppg_ns\grammar_rule_gen;
 
-require_once(__DIR__ . "/../src/Generic_interface.php");
+require_once("../src/generic_const.php");
 
 define('PARENT_CLASS',"parser_grammar_rule");
 
-class Php_class_gen extends \Cheope_ppp_ns\src\Generic_interface
+class Php_class_gen extends \Cheope_ppg_ns\src\Generic_interface
 {
  private $fileName;
  private $fileHandle;

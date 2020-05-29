@@ -1,9 +1,9 @@
 <?
-namespace Cheope_ppp_ns\grammar_rule_gen;
+namespace Cheope_ppg_ns\grammar_rule_gen;
 
 require_once("Grammar_rule_gen.php");
 
-class Grammar_rules_gen extends \Cheope_ppp_ns\src\Generic_interface
+class Grammar_rules_gen extends \Cheope_ppg_ns\src\Generic_interface
 {
  private $grammarRuleGen;
  private $grammarDefs;
@@ -90,13 +90,13 @@ class Grammar_rules_gen extends \Cheope_ppp_ns\src\Generic_interface
  
  static function &createLexer($actStr,$actFileName)
  {
- 	$lex = new \Cheope_ppp_ns\src\Lexer_3($actStr,$actFileName);
+ 	$lex = new \Cheope_ppg_ns\src\Lexer_3($actStr,$actFileName);
  	return $lex;
  }
  
  static function &createParser($actLex)
  {
- 	$parser = new \Cheope_ppp_ns\src\Parser($actLex);
+ 	$parser = new \Cheope_ppg_ns\src\Parser($actLex);
  	return $parser;
  }
  
@@ -108,13 +108,13 @@ static function &createPhpClassGen($actClass,$actNum)
  
 static function &createTokensContainer()
  {
- 	$tokensCont = new \Cheope_ppp_ns\src\Tokens_container();
+ 	$tokensCont = new \Cheope_ppg_ns\src\Tokens_container();
  	return $tokensCont;
  }
  
 static function &createToken()
  {
- 	$token = new \Cheope_ppp_ns\src\Token();
+ 	$token = new \Cheope_ppg_ns\src\Token();
  	return $token;
  }
  

@@ -1,9 +1,9 @@
 <?
-namespace Cheope_ppp_ns\grammar_rule_gen;
+namespace Cheope_ppg_ns\grammar_rule_gen;
 
-require_once(__DIR__ . "/../src/Generic_interface.php");
+require_once("../src/Generic_interface.php");
 
-class Grammar_defs_xml_reader extends \Cheope_ppp_ns\src\Generic_interface
+class Grammar_defs_xml_reader extends \Cheope_ppg_ns\src\Generic_interface
 {
 	private $fileName;
 	private $grammarDefs=array();

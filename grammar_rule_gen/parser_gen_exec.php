@@ -1,5 +1,5 @@
 <?
-namespace Cheope_ppp_ns\grammar_rule_gen;
+namespace Cheope_ppg_ns\grammar_rule_gen;
 
 require_once("Grammar_rules_gen.php");
 require_once("grammar_rule_gen_def.php");
@@ -43,7 +43,7 @@ foreach($grDefs as $ind=>$grDef)
  $phpClassGen = &$grRuleGen->getPhpClassGen();
  if($i == 0)
  {
-  $phpClassGen->setRequireOnces(array("__DIR__ . /../src/" . ucFirst(Grammar_rule_gen::RULE_SUFFIX) 
+  $phpClassGen->setRequireOnces(array("../src/" . ucFirst(Grammar_rule_gen::RULE_SUFFIX) 
   . STRING_POINT . "php"));  
  }
  else

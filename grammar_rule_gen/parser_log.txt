@@ -498,6 +498,978 @@ Matching token type:Delim
 Matching token char:WS
 Current token type:Lexical_element
 Current token char:NONTERMINALE
+Current token lexema:A
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:A
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:EQUAL
+Next token type:Special_item
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Special_item
+Matching token char:EQUAL
+Current token type:Special_item
+Current token char:EQUAL
+Current token lexema:=
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:alfa
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:ac
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:as
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:bs
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:alfa
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:OR
+Next token type:Special_item
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Special_item
+Matching token char:OR
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:NONTERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:GUP
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:GUP
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:OR
+Next token type:Special_item
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Special_item
+Matching token char:OR
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:beta
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:NONTERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:F
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:F
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:End of buffer.
+Ending getNextToken  NOT OK.
+Lex error on getting next token.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+EXEC SUCCEDED...OK!
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:NONTERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Grammar rule name:Produz_1
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:A
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:A
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:EQUAL
+Next token type:Special_item
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Special_item
+Matching token char:EQUAL
+Current token type:Special_item
+Current token char:EQUAL
+Current token lexema:=
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:alfa
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:ac
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:as
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:bs
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:alfa
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:OR
+Next token type:Special_item
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Special_item
+Matching token char:OR
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:NONTERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:GUP
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:GUP
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:OR
+Next token type:Special_item
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Special_item
+Matching token char:OR
+Current token type:Special_item
+Current token char:OR
+Current token lexema:|
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:TERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:TERMINALE
+Current token lexema:beta
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:WS
+Next token type:Delim
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Delim
+Current token char:WS
+Current token lexema: 
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:NONTERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Next Token get.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:TERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:F
+Match FAILED.
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Lexical_element
+Matching token char:NONTERMINALE
+Current token type:Lexical_element
+Current token char:NONTERMINALE
+Current token lexema:F
+Match OK.
+Getting next token.
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+LEXER ERROR:End of buffer.
+Ending getNextToken  NOT OK.
+Lex error on getting next token.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+Entering match.
+Getting current token.
+Current token NULL.
+End of buffer reached.
+Match FAILED.
+EXEC SUCCEDED...OK!
+Entering getNextToken.
+Token buffer at top.
+Reading new token from lex.
+Next token val:NONTERMINALE
+Next token type:Lexical_element
+Ending getNextToken OK.
+Grammar rule name:Produz_1
+Entering match.
+Getting current token.
+Current token get.
+Matching token type:Delim
+Matching token char:WS
+Current token type:Lexical_element
+Current token char:NONTERMINALE
 Current token lexema:GUP
 Match FAILED.
 Entering match.
