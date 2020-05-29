@@ -1,5 +1,5 @@
 <?
-namespace Cheope_ppp_ns\src;
+namespace Cheope_ppg_ns\src;
 
 define('ATTRIBUTE_ID',"id");
 define('ATTRIBUTE_HREF',"href");

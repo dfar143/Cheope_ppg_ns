@@ -1,5 +1,5 @@
 <?
-namespace Cheope_ppp_ns\src;
+namespace Cheope_ppg_ns\src;
 
 require_once("Lexer_3.php");
 require_once("Tokens_container.php");

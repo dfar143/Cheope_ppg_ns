@@ -1,5 +1,5 @@
 <?
-namespace Cheope_ppp_ns\src;
+namespace Cheope_ppg_ns\src;
 
 require_once("generic_const.php");
 require_once("Lex_rules_container.php");

@@ -1,5 +1,5 @@
 <?
-namespace Cheope_ppp_ns\src;
+namespace Cheope_ppg_ns\src;
 
 define("STRING_ESC_RETURN","\n");
 define("STRING_RETURN",chr(13));

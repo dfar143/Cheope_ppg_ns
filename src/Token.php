@@ -1,7 +1,5 @@
 <?
-namespace Cheope_ppp_ns\src;
-
-require_once("generic_const.php");
+namespace Cheope_ppg_ns\src;
 
 class Token
 {

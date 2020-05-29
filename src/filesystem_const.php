@@ -1,5 +1,4 @@
 <?
-namespace Cheope_ppp_ns\src;
 require_once("generic_const.php");
 
 if (substr(PHP_OS, 0, 3) == 'WIN') {
