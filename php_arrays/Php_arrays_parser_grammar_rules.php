@@ -1,11 +1,11 @@
 <?
-namespace Cheope_ppp_ns\php_arrays;
+namespace Cheope_ppg_ns\php_arrays;
 
 require_once("../src/Parser_grammar_rule.php");
 
 define('A_GRAMMAR_RULE',"a");
 
-class  Parser_grammar_rule_a extends \Cheope_ppp_ns\src\Parser_grammar_rule
+class  Parser_grammar_rule_a extends \Cheope_ppg_ns\src\Parser_grammar_rule
 {
 
 
@@ -45,7 +45,7 @@ function space()
 {
 $parser = &$this->getParser();
 $localTokensBufferPointer = $this->getTokensBufferPointer();
-$res1 = $parser->match(\Cheope_ppp_ns\src\Token::TYPE_DELIM,PHP_ARRAYS_TOKEN_VAL_WS);
+$res1 = $parser->match(\Cheope_ppg_ns\src\Token::TYPE_DELIM,PHP_ARRAYS_TOKEN_VAL_WS);
 if(! $res1)
 $this->backtrack($localTokensBufferPointer);
 $res2 = true;
@@ -98,7 +98,7 @@ $res15=false;
 $res16=false;
 $res17=false;
 
-$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_RESERVED_WORD,PHP_ARRAYS_TOKEN_VAL_ARRAY);
+$res11=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_RESERVED_WORD,PHP_ARRAYS_TOKEN_VAL_ARRAY);
 
 if(!$res11)
 {
@@ -114,7 +114,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_OPEN_PAR);
+$res13=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_OPEN_PAR);
 
 if(!$res13)
 {
@@ -146,7 +146,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res17=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_CLOSE_PAR);
+$res17=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_CLOSE_PAR);
 
 if(!$res17)
 {
@@ -344,7 +344,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res13=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_ARROW);
+$res13=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_ARROW);
 
 if(!$res13)
 {
@@ -404,7 +404,7 @@ $this->backtrack($localTokensBufferPointer);
 }
 else
 {
-$res23=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_ARROW);
+$res23=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_ARROW);
 
 if(!$res23)
 {
@@ -487,7 +487,7 @@ $res3=true;
 $res4=true;
 $res11=false;
 
-$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,PHP_ARRAYS_TOKEN_VAL_ITEM1);
+$res11=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,PHP_ARRAYS_TOKEN_VAL_ITEM1);
 
 if(!$res11)
 {
@@ -503,7 +503,7 @@ if(!$res1)
 {
 $res21=false;
 
-$res21=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,PHP_ARRAYS_TOKEN_VAL_ITEM2);
+$res21=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,PHP_ARRAYS_TOKEN_VAL_ITEM2);
 
 if(!$res21)
 {
@@ -521,7 +521,7 @@ if(!$res2)
 {
 $res31=false;
 
-$res31=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,PHP_ARRAYS_TOKEN_VAL_NUM);
+$res31=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,PHP_ARRAYS_TOKEN_VAL_NUM);
 
 if(!$res31)
 {
@@ -539,7 +539,7 @@ if(!$res3)
 {
 $res41=false;
 
-$res41=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_LEXICAL_ELEMENT,PHP_ARRAYS_TOKEN_VAL_CONST);
+$res41=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_LEXICAL_ELEMENT,PHP_ARRAYS_TOKEN_VAL_CONST);
 
 if(!$res41)
 {
@@ -571,7 +571,7 @@ $res11=false;
 $res12=false;
 $res13=false;
 
-$res11=$parser->match(\Cheope_ppp_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_VIRGOLA);
+$res11=$parser->match(\Cheope_ppg_ns\src\Token::TYPE_SPECIAL_ITEM,PHP_ARRAYS_TOKEN_VAL_VIRGOLA);
 
 if(!$res11)
 {
