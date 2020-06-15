@@ -1,4 +1,4 @@
-# Cheope_ppp_ns
+# Cheope_ppg_ns
 Php generic parser generator with namespaces
 ===========================
 
