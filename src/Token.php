@@ -15,7 +15,7 @@ class Token
  var $attribute;
  var $lexema;
  
- function __construct(?$actType=STRING_NULL,?$actVal=STRING_NULL)
+ function __construct($actType=STRING_NULL,$actVal=STRING_NULL)
  {
  	$this->type = $actType;
  	$this->val = $actVal;
@@ -65,3 +65,4 @@ class Token
 
 
 ?>
+
