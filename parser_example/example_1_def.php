@@ -37,7 +37,7 @@ $example1RulesArray=array($example1DefRules);
 
 define('EXAMPLE_1_PARSER_GRAMMAR_RULE_CONTAINER_1',"Contenitore_regole_grammaticali_1");
 
-$example1DefGrRule0=new Parser_grammar_rule_a();
+$example1DefGrRule0=new Parser_grammar_rule_a("a");
 
 $example1DefGrRules=new \Cheope_ppg_ns\src\Parser_grammar_rules_container(EXAMPLE_1_PARSER_GRAMMAR_RULE_CONTAINER_1);
 $example1DefGrRules->add($example1DefGrRule0);
@@ -68,8 +68,9 @@ $example1DefRules1->add($example1Rule1_1);
 $example1RulesArray[]=$example1DefRules1;
 
 
-$example1DefGrRule1=new Parser_grammar_rule_b(STRING_NULL);
+$example1DefGrRule1=new Parser_grammar_rule_b("b");
 
 $example1DefGrRules->add($example1DefGrRule1);
+
 
 ?>
